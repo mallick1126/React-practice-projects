@@ -1,0 +1,1311 @@
+// new leave template const NEWLEAVE = (from, to, leaveCount, name, leaveType)
+=> { if (leaveCount === 1) { return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      color: var(--cool-gray-800, #1f2937);
+                      text-align: center;
+                      font-family: SF Pro Display, Arial, sans-serif;
+                      font-size: 24px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 36px; /* 150% */
+                      letter-spacing: -0.2px;
+                    "
+                  >
+                    ${name}
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  requested a leave
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <div class="details-type" style="padding-bottom: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Leave on
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${from}
+              </div>
+            </div>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; } return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      color: var(--cool-gray-800, #1f2937);
+                      text-align: center;
+                      font-family: SF Pro Display;
+                      font-size: 24px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 36px; /* 150% */
+                      letter-spacing: -0.2px;
+                    "
+                  >
+                    ${name}
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  requested ${leaveCount} days leave
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <table style="width: 115%">
+              <tr>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave from
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${from}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave to
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${to}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; }; // approved leave template const APPROVEDLEAVE =(from, to, leaveCount,
+name, leaveType) => { if (leaveCount === 1) { return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  Your leave is <span style="color: green"> approved </span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <div class="details-type" style="padding-bottom: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Leave on
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${from}
+              </div>
+            </div>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; } return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  Your ${leaveCount} days leave is
+                  <span style="color: green"> approved </span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <table style="width: 115%">
+              <tr>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave from
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${from}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave to
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${to}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; }; // rejected leave template // const REJECTEDLEAVE = `<b>rejected leave</b
+>`; const REJECTEDLEAVE = (from, to, leaveCount, name, leaveType) => { if
+(leaveCount === 1) { return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  Your leave is <span style="color: red"> rejected </span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <div class="details-type" style="padding-bottom: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Leave on
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${from}
+              </div>
+            </div>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; } return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  Your ${leaveCount} days leave is
+                  <span style="color: red"> rejected </span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <table style="width: 115%">
+              <tr>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave from
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${from}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave to
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${to}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; }; // // new leave for other leave template // const NEWLEAVEFOROTHERS = `<b
+  >created new leave by manager</b
+>`; const NEWLEAVETOOTHERS = (from, to, leaveCount, name, leaveType) => { if
+(leaveCount === 1) { return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      color: var(--cool-gray-800, #1f2937);
+                      text-align: center;
+                      font-family: SF Pro Display, Arial, sans-serif;
+                      font-size: 24px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 36px; /* 150% */
+                      letter-spacing: -0.2px;
+                    "
+                  >
+                    ${name}
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  added your leave
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <div class="details-type" style="padding-bottom: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Leave on
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${from}
+              </div>
+            </div>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; } return `<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <table
+      class="container"
+      style="
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        font-family: SF Pro Display, Arial, sans-serif;
+      "
+    >
+      <tr>
+        <td>
+          <img
+            src="https://openvy.imgix.net/gunther_assets/gunther_mial_logo.png"
+            alt="gunther"
+            width="147"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <div
+                  class="status"
+                  style="
+                    width: 343px;
+                    height: 36px;
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      color: var(--cool-gray-800, #1f2937);
+                      text-align: center;
+                      font-family: SF Pro Display;
+                      font-size: 24px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: 36px; /* 150% */
+                      letter-spacing: -0.2px;
+                    "
+                  >
+                    ${name}
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  style="
+                    color: var(--cool-gray-800, #1f2937);
+                    font-family: SF Pro Display;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 36px;
+                    letter-spacing: -0.2px;
+                  "
+                >
+                  added your ${leaveCount} days leave
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div
+            class="details"
+            style="
+              margin-top: 20px;
+              padding: 24px;
+              box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+              border-radius: 15px;
+              width: 343px;
+              margin-bottom: 12px;
+              background-color: #f9fafb;
+              text-align: left;
+            "
+          >
+            <table style="width: 115%">
+              <tr>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave from
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${from}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="details-type" style="padding-bottom: 16px">
+                    <div
+                      class="details-text"
+                      style="font-size: medium; font-weight: 600; color: gray"
+                    >
+                      Leave to
+                    </div>
+                    <div
+                      class="type"
+                      style="
+                        font-size: x-large;
+                        font-weight: bolder;
+                        margin-top: 5px;
+                      "
+                    >
+                      ${to}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <hr style="width: 343px; height: 1px; background-color: #e5e7eb" />
+            <div class="details-type" style="padding-top: 16px">
+              <div
+                class="details-text"
+                style="font-size: medium; font-weight: 600; color: gray"
+              >
+                Type
+              </div>
+              <div
+                class="type"
+                style="font-size: x-large; font-weight: bolder; margin-top: 5px"
+              >
+                ${leaveType}
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="button-container" style="margin-top: 32px">
+            <a
+              href="https://gunther-olive.vercel.app/dashboard"
+              class="dashboard-button"
+              style="
+                background-color: #fb923c;
+                color: #fff;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 24px;
+                font-size: 18px;
+                text-decoration: none;
+                cursor: pointer;
+              "
+              >Go to Dashboard</a
+            >
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+`; }; module.exports = { NEWLEAVE, APPROVEDLEAVE, REJECTEDLEAVE,
+NEWLEAVEFOROTHERS };

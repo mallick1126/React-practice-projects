@@ -11,17 +11,18 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(true);
 
   const handlePrevious = () => {
-    if (step > 1) setStep(step - 1);
+    if (step > 1) setStep((s) => s - 1);
+    // its best practise to have a callback function to update the state based on current state.
   };
   const handleNext = () => {
-    if (step < messages.length) setStep(step + 1);
+    if (step < messages.length) setStep((s) => s + 1);
   };
 
   return (
     <>
       {isOpen ? (
         <>
-          <button className="close" onClick={() => setIsOpen(!isOpen)}>
+          <button className="close" onClick={() => setIsOpen((is) => !is)}>
             &times;
           </button>
           <div className="steps">
